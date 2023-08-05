@@ -42,8 +42,8 @@
     
     <div class="h-full w-full flex flex-col overflow-x-hidden">
         {#if ready}
-            <div transition:fade={{ duration: 800 }} class="flex-grow w-full flex items-center justify-center flex-col">
-                <img class="h-[40%] md:h-[50%] lg:h-[35%] pb-10" draggable="false" src="shiggy.png" alt="shiggy">
+            <div transition:fade={{ duration: 800 }} class="flex-grow w-full flex items-center justify-center flex-col pb-10 sm:pb-0">
+                <img class="h-[40%] sm:h-[40%] pb-10" draggable="false" src="shiggy.png" alt="shiggy">
 
                 <span class="mb-8">
                     Silly coder
@@ -55,18 +55,18 @@
                     </button>
                 </span>
 
-                <div class="flex gap-5">
+                <div class="flex flex-col gap-5 sm:flex-row items-center">
                     {#each Object.entries(links) as [site, { link, icon }]}
-                        <a href={link} target="_blank" class="bg-[#999e5c2b] border border-[#999e5c2b] hover:bg-white hover:bg-opacity-25 hover:border-[#ffffff5e] focus:bg-[#ffffff5e] flex p-3 gap-2 w-fit transition-all rounded-lg">
+                        <a href={link} target="_blank" class="bg-[#999e5c2b] flex items-center justify-center border border-[#999e5c2b] hover:bg-white hover:bg-opacity-25 hover:border-[#ffffff5e] focus:bg-[#ffffff5e] p-3 gap-2 sm:w-fit w-64 transition-all rounded-lg">
                             <img class="w-6 h-6 invert" src={icon} alt={site}>
                             <p>{site}</p>
                         </a>
                     {/each}
                 </div>
         
-                <div class="flex gap-5 pt-8">
+                <div class="flex flex-col pt-5 gap-5 sm:flex-row items-center">
                     {#each Object.entries(contacts) as [site, { link, icon }]}
-                        <a href={link} target="_blank" class="bg-[#9e2a592b] border border-[#9e2a592b] hover:bg-white hover:bg-opacity-25 hover:border-[#ffffff5e] focus:bg-[#ffffff5e] flex p-3 gap-2 w-fit transition-all rounded-lg">
+                        <a href={link} target="_blank" class="bg-[#9e2a592b] flex items-center justify-center border border-[#9e2a592b] hover:bg-white hover:bg-opacity-25 hover:border-[#ffffff5e] focus:bg-[#ffffff5e] p-3 gap-2 sm:w-fit w-64 transition-all rounded-lg">
                             <img class="w-6 h-6 invert" src={icon} alt={site}>
                             <p>{site}</p>
                         </a>
@@ -76,7 +76,7 @@
         {/if}
     
         <footer class="fixed bottom-0 w-full h-15 p-3 flex justify-center items-center bg-[#1b1312] text-[#ffcb82]">
-            <p>Copyright &copy; 2023 <a class="hover:text-white transition-all underline rounded" href="https://github.com/tekkenkkk">tekkenkkk</a> All rights reserved.</p>
+            <p class="text-sm sm:text-base">Copyright &copy; 2023 <a class="hover:text-white transition-all underline rounded" href="https://github.com/tekkenkkk">tekkenkkk</a> All rights reserved.</p>
         </footer>
     </div>
 </main>
