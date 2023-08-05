@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    color-scheme: dark;
+}
+
+* {
+    cursor: none !important;
+}
+
+body {
+    font-family: 'JetBrains Mono'
+}
