@@ -43,7 +43,7 @@
     <div class="h-full w-full flex flex-col overflow-x-hidden">
         {#if ready}
             <div transition:fade={{ duration: 800 }} class="flex-grow w-full flex items-center justify-center flex-col pb-10 sm:pb-0">
-                <img class="h-[30%] sm:h-[35%] pb-6 sm:pb-10" draggable="false" src="shiggy.png" alt="shiggy">
+                <img class="h-[30%] sm:h-[35%] pb-6 sm:pb-10" draggable="false" src="meow.png" alt="shiggy">
 
                 <span class="mb-6 sm:pb-4">
                     Silly coder
