@@ -43,9 +43,9 @@
     <div class="h-full w-full flex flex-col overflow-x-hidden">
         {#if ready}
             <div transition:fade={{ duration: 800 }} class="flex-grow w-full flex items-center justify-center flex-col pb-10 sm:pb-0">
-                <img class="h-[40%] sm:h-[40%] pb-10" draggable="false" src="shiggy.png" alt="shiggy">
+                <img class="h-[30%] sm:h-[35%] pb-6 sm:pb-10" draggable="false" src="shiggy.png" alt="shiggy">
 
-                <span class="mb-8">
+                <span class="mb-6 sm:pb-4">
                     Silly coder
 
                     <button class="text-[#ffcb82] hover:underline focus:bg-[#ffffff5e]" on:click={()=>{
@@ -55,7 +55,7 @@
                     </button>
                 </span>
 
-                <div class="flex flex-col gap-5 sm:flex-row items-center">
+                <div class="flex flex-col gap-3 sm:gap-5 sm:flex-row items-center">
                     {#each Object.entries(links) as [site, { link, icon }]}
                         <a href={link} target="_blank" class="bg-[#999e5c2b] flex items-center justify-center border border-[#999e5c2b] hover:bg-white hover:bg-opacity-25 hover:border-[#ffffff5e] focus:bg-[#ffffff5e] p-3 gap-2 sm:w-fit w-64 transition-all rounded-lg">
                             <img class="w-6 h-6 invert" src={icon} alt={site}>
@@ -64,7 +64,7 @@
                     {/each}
                 </div>
         
-                <div class="flex flex-col pt-5 gap-5 sm:flex-row items-center">
+                <div class="flex flex-col pt-3 sm:pt-5 gap-3 sm:gap-5 sm:flex-row items-center">
                     {#each Object.entries(contacts) as [site, { link, icon }]}
                         <a href={link} target="_blank" class="bg-[#9e2a592b] flex items-center justify-center border border-[#9e2a592b] hover:bg-white hover:bg-opacity-25 hover:border-[#ffffff5e] focus:bg-[#ffffff5e] p-3 gap-2 sm:w-fit w-64 transition-all rounded-lg">
                             <img class="w-6 h-6 invert" src={icon} alt={site}>
